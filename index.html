@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>macOS</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <div class="top">
+
+        <!-- left side items -->
+
+        <div class="navitem">
+            <div><i class="fa fa-apple appleicon"></i></div>
+            <div class="facetime">FaceTime</div>
+            <div class="leftText">Edit</div>
+            <div class="leftText">Video</div>
+            <div class="leftText">Help</div>
+        </div>
+
+        <!-- right side items -->
+
+        <div class="navitem">
+            <div><img class="videoIcon" src="img/video-camera.png"></div>
+            <div><img class="batteryIcon" src="img/battery-status.png"></div>
+            <div><img class="wifiIcon" src="img/wi-fi.png"></div>
+            <div><img class="searchIcon" src="img/search.png"></div>
+            <div><img class="ccIcon" src="img/control-center-icon.png"></div>
+            <div id="demo" class="dateTime"></div>
+        </div>
+
+    </div>
+
+    <!-- dock -->
+
+    <div class="dock">
+        <div><img class="dockIcon" src="img/finder.png"></div>
+        <div><img class="dockIcon" src="img/safari.png"></div>
+        <div><img class="dockIcon" src="img/cal.png"></div>
+        <div><img class="dockIcon" src="img/calc.png"></div>
+        <div><img class="dockIcon" src="img/photos.png"></div>
+        <div><img class="dockIcon" src="img/mssg.png"></div>
+        <div><img class="dockIcon" src="img/maps.png"></div>
+        <div><img class="dockIcon" src="img/mail.png"></div>
+        <div><img class="dockIcon" src="img/setting.png"></div>
+        <div><img class="dockIcon" src="img/music.png"></div>
+        <div class="hrLine"></div>
+        <div><img class="dockIcon" src="img/folder.png"></div>
+        <div><img class="dockIcon" src="img/bin.png"></div>
+    </div>
+
+    <script>
+        const d = new Date().toDateString();
+        document.getElementById("demo").innerHTML = d;
+    </script>
+
+</body>
+
+</html>
